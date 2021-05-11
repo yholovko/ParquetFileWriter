@@ -1,0 +1,93 @@
+{
+  "type" : "record",
+  "name" : "spark_schema",
+  "fields" : [ {
+    "name" : "assetId",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "contentType",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "coordinates",
+    "type" : [ "null", {
+      "type" : "array",
+      "items" : {
+        "type" : "record",
+        "name" : "list",
+        "fields" : [ {
+          "name" : "element",
+          "type" : [ "null", {
+            "type" : "record",
+            "name" : "element",
+            "fields" : [ {
+              "name" : "n",
+              "type" : [ "null", "long" ],
+              "default" : null
+            }, {
+              "name" : "x",
+              "type" : [ "null", "double" ],
+              "default" : null
+            }, {
+              "name" : "y",
+              "type" : [ "null", "double" ],
+              "default" : null
+            } ]
+          } ],
+          "default" : null
+        } ]
+      }
+    } ],
+    "default" : null
+  }, {
+    "name" : "measurementId",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "mediaType",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "nodeId",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "siteId",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "tags",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "xUnit",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "yUnit",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "companyId",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "windowFunction",
+    "type" : [ "null", "string" ],
+    "default" : null
+  }, {
+    "name" : "speedRPM",
+    "type" : [ "null", "long" ],
+    "default" : null
+  }, {
+    "name" : "created_at",
+    "type" : [ "null", {
+      "type" : "fixed",
+      "name" : "INT96",
+      "doc" : "INT96 represented as byte[12]",
+      "size" : 12
+    } ],
+    "default" : null
+  } ]
+}
