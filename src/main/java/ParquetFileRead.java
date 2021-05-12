@@ -24,7 +24,6 @@ public class ParquetFileRead {
         try {
             reader = AvroParquetReader
                     .<GenericData.Record>builder(HadoopInputFile.fromPath(path, conf))
-//                    .withConf(new Configuration())
                     .build();
             GenericData.Record record;
             while ((record = reader.read()) != null) {
